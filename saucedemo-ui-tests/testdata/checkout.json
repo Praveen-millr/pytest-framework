@@ -1,0 +1,30 @@
+{
+  "valid_customer": {
+    "first_name": "Test",
+    "last_name": "User",
+    "postal_code": "600001"
+  },
+  "missing_fields": [
+    {
+      "id": "first_name",
+      "first_name": "",
+      "last_name": "User",
+      "postal_code": "600001",
+      "error": "First Name is required"
+    },
+    {
+      "id": "last_name",
+      "first_name": "Test",
+      "last_name": "",
+      "postal_code": "600001",
+      "error": "Last Name is required"
+    },
+    {
+      "id": "postal_code",
+      "first_name": "Test",
+      "last_name": "User",
+      "postal_code": "",
+      "error": "Postal Code is required"
+    }
+  ]
+}
